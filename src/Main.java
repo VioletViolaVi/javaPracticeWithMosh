@@ -3,6 +3,7 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args) {
+
         // Primitive data types
         System.out.println("hi world");
         byte age = 1;
@@ -30,6 +31,8 @@ public class Main {
         System.out.println("letter2: " + letter2);
         System.out.println("letter1: " + letter1);
 
+        System.out.println("\n");
+
         // Reference data types
         Date now = new Date();
         System.out.println("now: " + now);
@@ -43,5 +46,26 @@ public class Main {
         point1.y = 5;
         System.out.println("point1: " + point1);
         System.out.println("point2: " + point2);
+
+        System.out.println("\n");
+
+        // Strings
+        String message = "     Hi there world" + "!!!!!             ";
+        System.out.println("message: " + message);
+        System.out.println("message.endsWith(\"!!\"): " + message.endsWith("!!"));
+        System.out.println("message.endsWith(\"Nice to see ya!\"): " + message.endsWith("Nice to see ya!"));
+        System.out.println("message.startsWith(\"!!\"): " + message.startsWith("!!"));
+        System.out.println("message.length()): " + message.length());
+        System.out.println("message.isBlank(): " + message.isBlank());
+        System.out.println("message.indexOf(\"there\"): " + message.indexOf("there"));
+        System.out.println("message.indexOf(\"l\"): " + message.indexOf("l"));
+        System.out.println("message.replace(\"Hi\", \"BYE\"): " + message.replace("Hi", "BYE"));
+        System.out.println("note the message string variable didn't change 'cause strings are immutable :) = " + message);
+        System.out.println("message.toLowerCase(): " + message.toLowerCase());
+        System.out.println("message.toUpperCase(): " + message.toUpperCase());
+        System.out.println("message.trim(): " + message.trim());
+        System.out.println("note the message string variable STILL didn't change 'cause strings are immutable :D = " + message);
+
+        System.out.println("\n");
     }
 }
